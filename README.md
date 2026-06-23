@@ -85,3 +85,13 @@ install.cmd        First-time environment setup
 run.cmd / run.vbs  Launchers
 requirements.txt   Python dependencies
 ```
+
+## License
+
+Licensed under the **GNU General Public License v3.0** — see [LICENSE](LICENSE).
+
+GPLv3 is required because Lingua builds on **PyQt6**, which is distributed under
+the GPL. Bundled/optional components keep their own permissive licenses, all
+compatible with GPLv3: [llama.cpp](https://github.com/ggml-org/llama.cpp) (MIT),
+NLTK (Apache-2.0), [WordNet](https://wordnet.princeton.edu/license) (BSD-style),
+and `wn` (MIT). The Qwen model you supply is covered by its own license.
