@@ -1,5 +1,10 @@
 # Lingua
 
+<p align="center">
+  <a href="https://github.com/JP-Discoveries/lingua/releases/latest"><img src="https://img.shields.io/github/v/release/JP-Discoveries/lingua?sort=semver&label=release" alt="Latest release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/JP-Discoveries/lingua" alt="License: GPL v3"></a>
+</p>
+
 A fast, fully-offline **dictionary &amp; thesaurus** for the desktop — definitions,
 synonyms, antonyms, pronunciation, and an on-device AI assistant, all running
 locally with no network calls.
