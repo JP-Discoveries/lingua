@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingua</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div id="app">
+
+    <!-- ══════════════════════════════════════════════════════════
+         HOME
+    ══════════════════════════════════════════════════════════ -->
+    <div id="view-home" class="view">
+        <header class="home-header">
+            <div class="brand">
+                <span class="brand-name">Lingua</span>
+                <span class="brand-sep">·</span>
+                <span class="brand-sub">Dictionary &amp; Thesaurus</span>
+            </div>
+            <button id="btn-favs" class="btn-icon" title="Favorites">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="19" height="19">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+            </button>
+        </header>
+
+        <main class="home-main">
+            <div id="wotd-card" class="wotd-card">
+                <div class="wotd-eyebrow">Word of the Day</div>
+                <div class="skeleton-line sk-word"></div>
+                <div class="skeleton-line sk-def"></div>
+                <div class="skeleton-line sk-def2"></div>
+            </div>
+
+            <div class="search-wrap">
+                <label class="search-box large">
+                    <input id="home-search" type="text"
+                        placeholder="Search for a word or definition…"
+                        autocomplete="off" spellcheck="false">
+                </label>
+            </div>
+
+            <div id="home-history-section" class="history-section" hidden>
+                <p class="section-label">Recently Viewed</p>
+                <div id="home-history" class="chip-row"></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════
+         RESULTS
+    ══════════════════════════════════════════════════════════ -->
+    <div id="view-results" class="view" hidden>
+        <div class="top-bar">
+            <button id="results-back" class="btn-back" title="Back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18">
+                    <polyline points="15 18 9 12 15 6"/>
+                </svg>
+            </button>
+            <label class="search-box">
+                <input id="results-search" type="text" placeholder="Search…" autocomplete="off" spellcheck="false">
+            </label>
+            <button id="results-home" class="btn-icon" title="Home">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                    <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/>
+                    <polyline points="9 21 9 12 15 12 15 21"/>
+                </svg>
+            </button>
+        </div>
+        <div class="view-body">
+            <p id="results-heading" class="page-heading"></p>
+            <div id="results-list"></div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════
+         WORD
+    ══════════════════════════════════════════════════════════ -->
+    <div id="view-word" class="view" hidden>
+        <div class="top-bar">
+            <button id="word-back" class="btn-back" title="Back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18">
+                    <polyline points="15 18 9 12 15 6"/>
+                </svg>
+            </button>
+            <label class="search-box">
+                <input id="word-search" type="text" placeholder="Search…" autocomplete="off" spellcheck="false">
+            </label>
+            <button id="word-home" class="btn-icon" title="Home">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                    <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9.5z"/>
+                    <polyline points="9 21 9 12 15 12 15 21"/>
+                </svg>
+            </button>
+            <button id="word-fav-btn" class="btn-icon" title="Save word">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="19" height="19">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+            </button>
+        </div>
+        <div id="word-content" class="view-body word-body"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════
+         FAVORITES
+    ══════════════════════════════════════════════════════════ -->
+    <div id="view-favorites" class="view" hidden>
+        <div class="top-bar">
+            <button id="favs-back" class="btn-back" title="Back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18">
+                    <polyline points="15 18 9 12 15 6"/>
+                </svg>
+            </button>
+            <span class="top-bar-title">Favorites</span>
+        </div>
+        <div class="view-body">
+            <div id="favs-list"></div>
+        </div>
+    </div>
+
+</div>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

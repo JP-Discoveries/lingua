@@ -1,0 +1,12 @@
+PyQt6>=6.11.0
+PyQt6-WebEngine>=6.11.0
+PyQt6-Qt6>=6.11.0
+nltk>=3.8.0
+wn>=0.9.0
+pyttsx3>=2.90
+
+# LLM — GPU build (CUDA 12.4, recommended for your 16 GB VRAM):
+#   pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu124
+#
+# CPU-only fallback:
+#   pip install llama-cpp-python

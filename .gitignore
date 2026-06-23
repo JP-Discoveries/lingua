@@ -1,0 +1,38 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ── Virtual environment (recreate with install.cmd) ──────────────────────────
+venv/
+.venv/
+env/
+
+# ── Large runtime dependencies (obtained separately — see README) ────────────
+# Quantized LLM weights (download from Hugging Face)
+*.gguf
+# Prebuilt llama.cpp binaries + CUDA DLLs
+llama.cpp/
+
+# ── Generated / runtime user data (recreated by setup.py) ────────────────────
+# WordNet, NLTK corpora, and the user's local word history live here
+data/
+
+# ── Claude Code local config (machine-specific absolute paths) ───────────────
+.claude/
+
+# ── Windows shell artifacts (contain absolute paths / personal info) ─────────
+desktop.ini
+*.lnk
+Thumbs.db
+ehthumbs.db
+
+# ── IDE / editor state ───────────────────────────────────────────────────────
+.vs/
+.idea/
+.vscode/
+*.user
+
+# ── OS / misc ────────────────────────────────────────────────────────────────
+*.log
